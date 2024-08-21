@@ -7,6 +7,7 @@ const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
     { path: '/signin', element: <Signin /> },
+    { path: '*', element: <Notfound /> },
   ])
 
   return routes
@@ -18,6 +19,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <AppRoutes />
+        <Navbar />
       </BrowserRouter>
     </>
   )

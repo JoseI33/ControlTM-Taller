@@ -1,9 +1,11 @@
-import React from 'react'
+import Layout from "../../Components/Layout"
 
-function sigin() {
+function signin() {
   return (
-    <div>sigin</div>
+    <Layout>
+      Inicia sesion
+    </Layout>
   )
 }
 
-export default sigin
+export default signin
