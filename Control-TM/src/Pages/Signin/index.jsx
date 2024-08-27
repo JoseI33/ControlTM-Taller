@@ -1,6 +1,6 @@
 import Layout from "../../Components/Layout"
 
-function signin() {
+function Signin() {
   return (
     <Layout>
       Inicia sesion
@@ -8,4 +8,4 @@ function signin() {
   )
 }
 
-export default signin
+export default Signin

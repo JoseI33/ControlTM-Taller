@@ -41,8 +41,8 @@ const Navbar = () => {
                     </NavLink>
                 </li>
             </ul>
-            <ul>
-                <li>
+            <ul className="flex items-center gap-3">
+                <li className="text-black/60">
                     taller@tmroldasrl.com.ar
                 </li>
                 <li>
