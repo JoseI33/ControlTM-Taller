@@ -3,13 +3,14 @@ const Navbar = () => {
     const activeStyle = 'underline underline-offset-4'
 
     return (
-        <nav className="flex justify-between items-center top-0 fixed z-10 w-full py-5 px-8 text-sm font-medium"> 
-            <ul className="flex items-center gap-3">
-                <li className="font-semibold text-lg"> 
+        <nav className="flex justify-between items-center fixed top-0 z-10 w-full py-6 px-4 text-sm font-medium bg-red-700"> 
+        
+            <ul className="flex items-center gap-3 text-white/80">
+                <li> 
                     <NavLink to='/' className={({isActive}) =>
                     isActive ? activeStyle : undefined
                     }>
-                        TMROLDAN SRL
+                        <img className="w-48" src="http://tmroldansrl.com.ar/wp-content/uploads/2023/09/cropped-Logotipo-350x100-03.png" alt="tmroldan" />
                     </NavLink>
                 </li>
                 <li>
@@ -41,11 +42,11 @@ const Navbar = () => {
                     </NavLink>
                 </li>
             </ul>
-            <ul className="flex items-center gap-3">
-                <li className="text-black/60">
+            <ul className="flex items-center gap-3 text-sm">
+                <li className="text-white/60">
                     taller@tmroldasrl.com.ar
                 </li>
-                <li>
+                <li className="text-white/80">
                     <NavLink to='/signin' className={({isActive}) =>
                     isActive ? activeStyle : undefined
                     }>
